@@ -56,6 +56,9 @@ header .logo{
     font-weight: bold;
     color: #f9144f;
     font-size: 1.6em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 header .container{
@@ -66,10 +69,9 @@ header .container{
 
 header nav{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     padding-bottom: 25px;
-
 }
 
 header a{
@@ -110,8 +112,20 @@ header a:hover{
 }
 
 #about .container{
-    text-align: center;
-    padding: 100px 12px;
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 30px;
+}
+#about .img-container{
+    background-image: url(me.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    width: 300px;
+    border-radius: 200px;
+    border: 30px solid #f73162;
+    border-style:groove;
 }
 #about a{
     color: #f73162;
@@ -336,13 +350,6 @@ footer .container{
     footer .container{
         justify-content:space-around;
     }
-}
-
-@media (min-width: 1200px) {
-    #formulario{
-        background-position-x: calc(100vw - 800px);
-    }
-    
 }
 
 .container i{
