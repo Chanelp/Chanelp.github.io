@@ -14,7 +14,7 @@ body{
     margin: 0;
 }
 
-h1{font-size: 3.5em;}
+h1{font-size: 2.5em;}
 h2{font-size: 2.7em;}
 h3{font-size: 2em;}
 p{font-size: 1.25em;}
@@ -71,10 +71,7 @@ header .container{
 }
 
 header nav{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    padding-bottom: 25px;
+    display: none;
 }
 
 header a{
@@ -245,6 +242,12 @@ footer .container{
         justify-content: space-between;
     }
     header nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    header nav{
         flex-direction: row;
         padding-bottom: 0;
         padding-right: 20px;
@@ -374,4 +377,12 @@ footer .container{
     text-align:start;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width:720px){
+    header nav{
+        flex-direction: column;
+        padding-bottom: 0;
+        display: none;
+    }
 }
