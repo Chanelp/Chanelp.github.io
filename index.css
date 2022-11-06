@@ -12,6 +12,7 @@ html{
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    position: relative;
 }
 
 h1{font-size: 2.5em;}
@@ -20,6 +21,32 @@ h3{font-size: 2em;}
 p{font-size: 1.25em;}
 ul{list-style: none;}
 li{font-size: 1.25em;}
+
+.above{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f73162;
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    box-shadow: 0 5px 5px -2px rgb(25 25 25 / 41%);
+}
+
+.above a {
+    color: aliceblue;
+    text-decoration: none;
+    position: relative;
+    top: 10px;
+}
+
+.above a img {
+    rotate: -90deg;
+}
 
 button{
     font-size: 1.5em;
@@ -33,6 +60,7 @@ button{
     background-color: white;
     border-width: 2px;
     border-image: initial;
+    cursor: pointer;
 }
 
 button:hover{
@@ -131,6 +159,55 @@ header a:hover{
     color: #f73162;
 }
 
+/*PROYECTOS*/
+#proyectos{
+    background-color:rgb(247, 49, 98,0.8);
+    color: white;
+    text-align: center;
+}
+
+#proyectos .container{
+    padding: 150px 12px;
+}
+
+#proyectos h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#proyectos p{
+    display: none;
+}
+
+#proyectos .cartap{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 35px;
+    border-radius: 15px;
+}
+
+.cartap:first-child{
+    background-image: url("coinbase.png");
+}
+.cartap:nth-child(2){
+    background-image: url("hod.png");
+}
+.cartap:nth-child(3){
+    background-image: url("rdpage.png");
+}
+.programas2 .cartap:first-child{
+    background-image: url("YardSale.png");
+}
+.programas2 .cartap:nth-child(2){
+    background-image: url("tapiceria.png");
+}
+.programas2 .cartap:nth-child(3){
+    background-image: url("ccompras.png");
+}
+
+
+/*SERVIOS*/
 #servicios{
     background-color:rgb(247, 49, 98,0.8);
     color: white;
@@ -138,7 +215,7 @@ header a:hover{
 }
 
 #servicios .container{
-    padding: 150px 12px;
+    padding: 50px 12px;
 }
 
 #servicios h2{
@@ -184,6 +261,7 @@ header a:hover{
     )
     ,url("mbl.png");
 }
+
 
 #formulario .container{
     text-align: center;
@@ -286,7 +364,8 @@ footer .container{
         border-style:groove;
     }
     
-    #servicios .programas{
+    /*SERVICIOS*/
+    #servicios .programas, #proyectos .programas2{
         display: flex;
         justify-content: center;
     }
@@ -339,6 +418,55 @@ footer .container{
         )
         ,url("mbl.png");
     }
+
+    /*PROYECTSO*/
+    #proyectos .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #proyectos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #proyectos h2{
+        font-size: 4em;
+    }
+
+    #proyectos h3{
+        margin-top: 0;
+    }
+    
+    #proyectos .cartap{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(50, 50, 50, 0.5);
+    }
+
+    .cartap:first-child{
+        background-image: url("coinbase.png");
+    }
+    
+    .cartap:nth-child(2){
+        background-image: url("hod.png");
+    }
+    
+    .cartap:nth-child(3){
+        background-image: url("rdpage.png");
+    }
+
+    .cartap:nth-child(4){
+        background-image: url("YardSale.png");
+    }
+
+    .cartap:nth-child(5){
+        background-image: url("tapiceria.png");
+    }
+
+
 
     
     #formulario .container{
