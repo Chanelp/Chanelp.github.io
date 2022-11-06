@@ -188,22 +188,22 @@ header a:hover{
 }
 
 .cartap:first-child{
-    background-image: url("coinbase.png");
+    background-image: url("./coinbase.png");
 }
 .cartap:nth-child(2){
-    background-image: url("hod.png");
+    background-image: url("./hod.png");
 }
 .cartap:nth-child(3){
-    background-image: url("rdpage.png");
+    background-image: url("./rdpage.png");
 }
 .programas2 .cartap:first-child{
-    background-image: url("YardSale.png");
+    background-image: url("./YardSale.png");
 }
 .programas2 .cartap:nth-child(2){
-    background-image: url("tapiceria.png");
+    background-image: url("./tapiceria.png");
 }
 .programas2 .cartap:nth-child(3){
-    background-image: url("ccompras.png");
+    background-image: url("./ccompras.png");
 }
 
 
