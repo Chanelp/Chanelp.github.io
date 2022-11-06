@@ -398,7 +398,7 @@ footer .container{
             rgba(12, 11, 11, 0.5),
             rgba(12, 11, 11, 0.5)
         )
-        ,url("softdev.jpg");
+        ,url("./softdev.jpg");
     }
     
     .carta:nth-child(2){
@@ -407,7 +407,7 @@ footer .container{
             rgba(12, 11, 11, 0.5),
             rgba(12, 11, 11, 0.5)
         )
-        ,url("anltcs.jpg");
+        ,url("./anltcs.jpg");
     }
     
     .carta:nth-child(3){
@@ -416,7 +416,7 @@ footer .container{
             rgba(12, 11, 11, 0.5),
             rgba(12, 11, 11, 0.5)
         )
-        ,url("mbl.png");
+        ,url("./mbl.png");
     }
 
     /*PROYECTSO*/
@@ -447,23 +447,23 @@ footer .container{
     }
 
     .cartap:first-child{
-        background-image: url("coinbase.png");
+        background-image: url("./coinbase.png");
     }
     
     .cartap:nth-child(2){
-        background-image: url("hod.png");
+        background-image: url("./hod.png");
     }
     
     .cartap:nth-child(3){
-        background-image: url("rdpage.png");
+        background-image: url("./rdpage.png");
     }
 
     .cartap:nth-child(4){
-        background-image: url("YardSale.png");
+        background-image: url("./YardSale.png");
     }
 
     .cartap:nth-child(5){
-        background-image: url("tapiceria.png");
+        background-image: url("./tapiceria.png");
     }
 
 
