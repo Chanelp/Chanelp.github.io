@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="logo.png">
     <title>Chanel Paredes Website</title>
     <link rel="stylesheet" href="./index.css">
+    <!--Iconos-->
     <script src="https://kit.fontawesome.com/4f48a99ead.js" crossorigin="anonymous"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KJ79FB8VSR"></script>
@@ -14,9 +15,11 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-KJ79FB8VSR');
     </script>
+    <!--Animación letras-->
+    <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+
 </head>
 <body>
     <!--MENU DE NAVEGACIÓN-->
@@ -36,7 +39,7 @@
 
     <!--INICIO-->
     <section id="home">
-        <h1>Hola, soy Chanel. Diseñadora y desarrolladora <br> Web Front-end. </h1>
+        <h1 id="element"></h1>
         <form action="#about" id="form1">
             <button>Conozca más</button>
         </form>
@@ -49,7 +52,7 @@
                 
             </div>
             <div class="texto">
-                <h2>Soy Chanel Paredes, <span class="color-acento"> desarrolladora web Front-end Beginner.</span></h2>
+                <h2 id="element2"></span></h2>
                 <p> Me dedico a diseñar y desarrollar sitios webs estéticos, personalizados y responsivos desde la bella isla de República
                     Dominicana. <img src="https://cdn-icons-png.flaticon.com/512/317/317167.png" alt="República Dominicana" width="30" height="30"> Actualmente estudio la carrera de desarrollo de software en el centro más prestigioso de tecnología
                     en mi país, el Instituto Tecnológico de las Américas - ITLA. 
@@ -185,5 +188,20 @@
     <div class="above">
         <a href="#home">▲</a>
     </div>
+    
+    <!--Letras animadas-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          new TypeIt("#element", {
+            strings: ["Hola, soy Chanel. Diseñadora y desarrolladora <br> Web Front-end."],
+          }).go();
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+          new TypeIt("#element2", {
+            strings: ["Soy Chanel Paredes, <span class='color-acento'> desarrolladora web Front-end Beginner."],
+          }).go();
+        });
+      </script>
 </body>
 </html>
